@@ -1,8 +1,8 @@
 ## Approximate vertex enumeration
 
-This is the practical part of my bachelor's thesis *About a graph-theoretical algorithm for approximate vertex-enumeration*.\
+This is the practical part of my bachelor's thesis *About a graph-theoretical algorithm for approximate vertex-enumeration* consisting in the implementation of an algorithm\
 The thesis refers to [Andreas Löhne’s Approximate Vertex Enumeration](https://arxiv.org/abs/2007.06325), published in 2020. 
 There, the *approximate vertex enumeration*, which is the problem of computing a V-polytope that is close to a given H-polytope P is discussed and an approximate variant of Motzkin’s Double Description Method is developed.  
-For dimension three, a graph-theoretical version for approximate vertex enumeration emerges.
+For dimension three, a graph-theoretical version for approximate vertex enumeration emerges that is discussed and implemented in my thesis. 
 
-The implementation uses *the halfedge data structure (HEDS)*, which allows efficient manipulation of planar graphs.  Finally, the imple-mentation will be compared with an implementation of L ̈ohne’s original algorithm fordimension 3
+As the implementation of the algorithm required the implementation of an efficient data structure for planar graphs, part of the practical part is also the implementation of the *halfedge data structure (HEDS)*.  As the implementation needs to be compared with Löhne’s original algorithm for dimension 3, the original algorithm is implemented as well.
