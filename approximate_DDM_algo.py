@@ -167,9 +167,9 @@ def intersection(point1,point2,h,c):
     the hyperplane H = {x in IR^d | hx = c}, giben by h in IR^d and c in IR
     '''
     
-    # Einsetzen der Geraden point1 + s(point2 - point1) in hx=c und Umstellen nach s ergibt:
+    # putting in the line point1 + s(point2 - point1) in hx=c and solving for s leads to:
     s = (c-np.dot(h,point1))/(np.dot(h,(point2-point1)))
-    # Resubstitution ergibt den SP:
+    # Resubstitution leads to the intersection:
     intersection = point1 + s*(point2 - point1)
     #print("intersection=",intersection)
     return intersection
